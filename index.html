@@ -5,7 +5,15 @@
   <title>Minji Heo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root { --w: min(1000px, 92vw); } /* 기존 860px → 1000px 등 */
+    :root { --w: min(1000px, 92vw); 
+          --pub-w: min(760px, 92vw);} /* 기존 860px → 1000px 등 */
+
+    /* Publications 섹션만 폭을 줄여 중앙 정렬 */
+    .pub-section {
+      max-width: var(--pub-w);
+      margin: 0 auto;           /* 가운데 정렬 */
+    }
+    
     body { max-width: var(--w); margin: 0 auto; padding: 24px 16px; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #111; }
     a { text-decoration: none; }
     h1 { margin: 0 0 8px; font-size: 32px; }
@@ -116,6 +124,7 @@
 
 
   <!-- Publications -->
+  <div class="pub-section">
   <h2>Publications</h2>
 
   <div class="pub">
@@ -196,6 +205,7 @@
       <p>Survey of unlearning paradigms relevant to privacy and model lifecycle management.</p>
     </div>
   </div>
+</div>
 
   <!-- Research Experience -->
   <h2>Research Experience</h2>
