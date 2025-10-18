@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root { --w: min(1000px, 92vw); 
-          --pub-w: min(860px, 92vw);} /* 기존 860px → 1000px 등 */
+          --pub-w: min(860px, 92vw);} 
 
-    /* Publications 섹션만 폭을 줄여 중앙 정렬 */
+    
     .pub-section {
       max-width: var(--pub-w);
-      /* margin: 0 auto;           /* 가운데 정렬 */ */
+      
     }
     
     body { max-width: var(--w); margin: 0 auto; padding: 24px 16px; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #111; }
@@ -22,12 +22,12 @@
       display: grid;
       grid-template-columns: 3fr 1fr;
       gap: 24px;
-      align-items: start;   /* ← center → start 로 변경 */
+      align-items: start;   
     }
 
     .links a { margin-right: 12px; }
     .avatar {
-  width: 140px;       /* 원하는 크기 설정 */
+  width: 140px;       
   border-radius: 50%;
   object-fit: cover;
   margin-top: 60px;
@@ -35,19 +35,19 @@
 
     .tag { font-size: 12px; padding: 2px 8px; border: 1px solid #ddd; border-radius: 999px; margin-right: 6px; }
     .pub { display: grid; grid-template-columns: 120px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid #eee; }
-    /* 기존
+    /* 
 .thumb { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; background: #f6f6f6; }
 */
 
-/* 새로 */
+/*  */
     .thumb {
       width: 120px;
-      height: 90px;                /* 썸네일 박스 크기 유지 */
-      object-fit: contain;         /* 전체가 보이도록 (자르지 않음) */
-      object-position: center;     /* 가운데 정렬 */
+      height: 90px;                
+      object-fit: contain;         
+      object-position: center;     
       border-radius: 8px;
-      background: #fff;            /* 여백(레터박스) 색 */
-      border: 1px solid #eee;      /* 경계선(선택) */
+      background: #fff;            
+      border: 1px solid #eee;      
     }
     .papertitle { font-weight: bold; }
     .btns a { margin-right: 10px; font-size: 14px; }
@@ -99,7 +99,7 @@
 
     </div>
     <div>
-      <!-- 프로필 사진 경로 교체 -->
+      <!--  -->
       <img class="avatar" src="images/minji.jpg" alt="Minji Heo">
     </div>
   </section>
@@ -211,7 +211,7 @@
   <h2>Research Experience</h2>
   <ul class="tight">
     <li><b>Deepfake Self-Modeling & Mental-Health Communication</b> — AI Convergence Research Support Program, SKKU (2024). Investigated how synthetic self-representations influence engagement and resistance in sensitive healthcare contexts.</li>
-    <!-- 필요 시 다른 프로젝트를 여기에 추가 -->
+    <!--  -->
   </ul>
 
   <!-- Work Experience -->
