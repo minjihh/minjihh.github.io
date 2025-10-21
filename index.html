@@ -63,14 +63,14 @@
 :root { 
     --w: min(1000px, 92vw);
     --pub-w: min(860px, 92vw);
-    /* 뉴스 박스는 본문보다 살짝 좁게 */
-    --news-w: min(720px, 92vw);
+    
+    --news-w: min(820px, 92vw);
   }
 
-  /* 뉴스 박스 */
+  
   .news {
     width: var(--news-w);
-    margin: 14px auto 24px;     /* 가운데 정렬 */
+    margin: 14px auto 24px;     
     background: #fff;
     border: 1px solid #e9e9e9;
     border-radius: 12px;
@@ -78,20 +78,20 @@
     padding: 12px 14px;
   }
 
-  /* 타이틀과 리스트를 분리 */
+  
   .news > h2 {
     margin: 6px 4px 10px;
     font-size: 20px;
   }
 
-  /* 스크롤되는 내용 영역 */
+ 
   .news-scroll {
-    max-height: 160px;          /* 필요하면 200~240px로 조절 */
-    overflow: auto;             /* 내부 스크롤 */
-    padding-right: 6px;         /* 스크롤바 공간 */
+    max-height: 160px;          
+    overflow: auto;             
+    padding-right: 6px;         
   }
 
-  /* 리스트 기본 */
+  
   .news-list {
     list-style: none;
     padding: 0;
@@ -99,7 +99,7 @@
   }
   .news-item {
     display: grid;
-    grid-template-columns: 90px 1fr;  /* 날짜 고정, 내용 가변 */
+    grid-template-columns: 90px 1fr;  
     gap: 8px 12px;
     padding: 8px 6px;
     border-bottom: 1px solid #f2f2f2;
@@ -114,13 +114,13 @@
   .news-item b { font-weight: 700; }
   .news-item i { font-style: italic; }
 
-  /* 스크롤바(옵션): 깔끔한 스타일 */
+  
   .news-scroll::-webkit-scrollbar { width: 10px; }
   .news-scroll::-webkit-scrollbar-track { background: #fafafa; border-radius: 10px; }
   .news-scroll::-webkit-scrollbar-thumb { background: #dcdcdc; border-radius: 10px; }
   .news-scroll { scrollbar-color: #dcdcdc #fafafa; scrollbar-width: thin; }
 
-  /* 모바일에서는 너비 꽉 채우기 */
+  
   @media (max-width: 680px) {
     .news { width: 100%; }
     .news-item { grid-template-columns: 80px 1fr; }
@@ -180,22 +180,22 @@
   <div class="news-scroll">
     <ul class="news-list">
       <li class="news-item">
-        <time>Oct 2025</time>
-        <div>
-          <b>“FakeChain: Exposing Shallow Cues in Multi-Step Deepfake Detection”</b> 
-          accepted to <i>ACM CIKM 2025</i>. 
-          <a href="http://arxiv.org/abs/2509.16602" target="_blank">arXiv</a>
-        </div>
-      </li>
-      <li class="news-item">
         <time>Sep 2025</time>
         <div>
           <b>“Through the Lens: Benchmarking Deepfake Detectors Against Moiré-Induced Distortions”</b> 
           accepted to <i>NeurIPS 2025 Benchmark Track</i>. 
-          <a href="data/nips_thumb.pdf" target="_blank">PDF</a>
+          
         </div>
       </li>
-      <!-- 필요시 항목 더 추가 -->
+      <li class="news-item">
+        <time>Aug 2025</time>
+        <div>
+          <b>“FakeChain: Exposing Shallow Cues in Multi-Step Deepfake Detection”</b> 
+          accepted to <i>ACM CIKM 2025</i>. 
+          
+        </div>
+      </li>
+      
     </ul>
   </div>
 </section>
