@@ -69,8 +69,10 @@
 
   
   .news {
-    width: var(--news-w);
-    margin: 14px auto 24px;     
+    /* width: var(--news-w);
+    margin: 14px auto 24px;      */
+    max-width: var(--pub-w);   /* 공개물 섹션과 동일 폭으로 */
+    margin: 14px 0 24px 0;     /* 왼쪽 시작 (auto 제거) */
     background: #fff;
     border: 1px solid #e9e9e9;
     border-radius: 12px;
