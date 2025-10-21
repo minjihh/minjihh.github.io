@@ -38,6 +38,24 @@
     /* 
 .thumb { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; background: #f6f6f6; }
 */
+/* Publication thumbnail */
+.thumb{
+  width:120px;
+  height:90px;
+  object-fit:contain;     
+  object-position:center;
+  border-radius:8px;
+  background:#fff;
+  border:1px solid #eee;
+  display:block;
+}
+
+/* mogile */
+@media (max-width:680px){
+  .pub{ grid-template-columns:1fr; }
+  .thumb{ width:100%; height:auto; }
+}
+    
 
 /* News: simple bullet list style */
 .news-plain { 
