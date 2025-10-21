@@ -101,6 +101,39 @@ footer { margin-top: 26px; font-size: 13px; color: #666; }
   text-decoration: underline; 
 }
 
+/* ==== Research Experience (two-column header like the screenshot) ==== */
+.exp-section { max-width: var(--pub-w); }
+
+.exp-item {
+  padding: 12px 0 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.exp-head {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  gap: 8px 16px;
+  align-items: baseline;
+}
+
+.exp-title { font-weight: 700; }          
+.exp-role  { font-weight: 400; }         
+.exp-meta  { text-align: right; font-style: italic; color: #444; }
+.exp-meta .nowrap { white-space: nowrap; }
+
+.exp-sub { margin: 4px 0 6px; color: #222; }  
+
+.exp-bullets { 
+  margin: 0 0 0 18px;       
+  padding: 0;
+}
+.exp-bullets li { margin: 4px 0; }
+
+
+@media (max-width: 680px) {
+  .exp-head { grid-template-columns: 1fr; }
+  .exp-meta { text-align: left; margin-top: 2px; }
+}
 
     
   </style>
@@ -275,11 +308,30 @@ footer { margin-top: 26px; font-size: 13px; color: #666; }
 </div>
 
   <!-- Research Experience -->
+<section class="exp-section">
   <h2>Research Experience</h2>
-  <ul class="tight">
-    <li><b>Deepfake Self-Modeling & Mental-Health Communication</b> — AI Convergence Research Support Program, SKKU (2024). Investigated how synthetic self-representations influence engagement and resistance in sensitive healthcare contexts.</li>
-    <!--  -->
-  </ul>
+
+  <div class="exp-item">
+    <div class="exp-head">
+      <div>
+        <span class="exp-title">Deepfake Self-Modeling and Mental Health Communication</span>, 
+        <span class="exp-role">Research Assistant</span>
+      </div>
+      <div class="exp-meta">
+        <span class="nowrap">Suwon, Korea</span><br>
+        <span class="nowrap">Jun. 2024 – Present</span>
+      </div>
+    </div>
+
+    <div class="exp-sub">AI Convergence Research Support Program / SKKU</div>
+
+    <ul class="exp-bullets">
+      <li>Built a participant-personalized AI video generation pipeline (FaceSwap, TTS, lip-sync).</li>
+      <li>Designed a low/high-similarity setting via ArcFace to study disclosure resistance.</li>
+    </ul>
+  </div>
+</section>
+
 
   <!-- Work Experience -->
   <h2>Work Experience</h2>
